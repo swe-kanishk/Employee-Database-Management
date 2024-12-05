@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <header>
+        <h1>Employee Database system</h1>
+        <button class="createEmployee">Add Employee</button>
+      </header>
+    </div>
+    <div class="employees">
+      <div class="employee__names">
+        <div class="employees__names--title">Employee List</div>
+        <div class="employees_names--list"></div>
+      </div>
+      <div class="employee__single">
+        <div class="employees__single--title">Employee Information</div>
+        <div class="employees__single--info"></div>
+      </div>
+    </div>
+    <div class="addEmployee">
+      <form class="addEmployee_create">
+        Add a new Emplyee
+        <div>
+          <input
+            type="text"
+            name="firstName"
+            required
+            placeholder="First Name"
+          />
+          <input type="text" name="lastName" required placeholder="Last Name" />
+          <input
+            type="text"
+            name="imageUrl"
+            placeholder="Image URL (Optional)"
+          />
+          <input type="email" name="email" required placeholder="Email" />
+          <input type="text" name="address" required placeholder="Address" />
+          <input
+            type="date"
+            name="dob"
+            required
+            placeholder="Date of Birth"
+            class="addEmployee_create--dob"
+          />
+          <input
+            type="number"
+            name="contactNumber"
+            required
+            placeholder="Contact"
+          />
+          <input type="number" name="salary" required placeholder="Salary" />
+          <input
+            type="submit"
+            value="Submit"
+            class="addEmployee_create--submit"
+          />
+        </div>
+      </form>
+    </div>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
